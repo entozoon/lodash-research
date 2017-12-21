@@ -16,6 +16,15 @@ class App extends Component {
 
     //
 
+    console.log(
+      "\nSet a nested value deep in a thing that probably doesn't exist yet"
+    );
+    let obj = {};
+    _.set(obj, "foo.bar", "baz");
+    console.log(obj);
+
+    //
+
     let ownerArr = [
       {
         owner: "Colin",
